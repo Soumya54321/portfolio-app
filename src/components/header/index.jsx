@@ -9,10 +9,10 @@ const Header = () => {
                 <img src={`${process.env.PUBLIC_URL}/img/myImg1.jpeg`} alt="" class="img-fluid rounded-circle"/>
                 <h1 class="text-light"><a href="/">Soumyadeep Paul</a></h1>
                 <div class="social-links mt-3 text-center">
-                    <a href="https://www.facebook.com/soumyadeep.paul.35" target="_blank" class="facebook facebook-background"><i class="fa fa-facebook"></i></a>
-                    <a href="https://www.instagram.com/__soumyadeeppaul__/" target="_blank" class="instagram insta-background"><i class="fa fa-instagram"></i></a>
-                    <a href="https://github.com/Soumya54321" class="github github-background" target="_blank"><i class="fa fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/soumyadeep-paul-b8516b191/" class="linkedin linkedin-background" target="_blank"><i class="fa fa-linkedin"></i></a>
+                    <a href="https://www.facebook.com/soumyadeep.paul.35" target="_blank"  rel="noreferrer" class="facebook facebook-background"><i class="fa fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/__soumyadeeppaul__/" target="_blank"  rel="noreferrer" class="instagram insta-background"><i class="fa fa-instagram"></i></a>
+                    <a href="https://github.com/Soumya54321" class="github github-background"  rel="noreferrer" target="_blank"><i class="fa fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/soumyadeep-paul-b8516b191/"  rel="noreferrer" class="linkedin linkedin-background" target="_blank"><i class="fa fa-linkedin"></i></a>
                 </div>
             </div>
 
