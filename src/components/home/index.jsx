@@ -1,28 +1,23 @@
-import { Link } from "react-router-dom";
+import React, { Component } from 'react';
+import Typewriter from 'typewriter-effect';
 
 import "./style.css";
 
-const Home = () => {
-  return (
-    <div className="home">
-      <div className="title">
-        <h1>
-          <p>Hi,</p>
-          <p>I am Soumyadeep Paul</p>
-          <p>Software developer</p>
-        </h1>
-        <Link to="about">
-          <button>More Info</button>
-        </Link>
-      </div>
-      <div className="person">
-        <img
-          src={`${process.env.PUBLIC_URL}/myImg2.png`}
-          alt="person picture"
-        />
-      </div>
-    </div>
-  );
+class Home extends Component {
+  state = {
+    characters: ["Developer", "Learner", "Singer"]
+  }
+
+  render(){
+    return (
+      <section id="hero" className="d-flex flex-column justify-content-center align-items-center">
+        <div className="hero-container" data-aos="fade-in">
+          <h1>Soumyadeep Paul</h1>
+          <p> <div className="text-allignment"> I'm a </div><div className="text-allignment"><Typewriter options={{ strings: this.state.characters, autoStart: true, loop: true, delay: 100, changeDeleteSpeed: 100}}/></div></p>
+        </div>
+      </section>
+    );
+  }
 };
 
 export default Home;
